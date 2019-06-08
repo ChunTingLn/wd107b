@@ -1,5 +1,5 @@
 input[type=text]
- {
+ {  font-size: 24px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -9,10 +9,7 @@ input[type=text]
     background-color: rgb(106, 107, 99);
     color: white;
   }
-  textarea 
-  {
-    font-size: 48px;
-  }
+  
   body 
   {background-color:#55a5ca;
    font-size: 24px;
