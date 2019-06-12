@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0px; 
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(102, 207, 233);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: goldenrod;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0, 255, 128);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgba(4, 55, 102, 0.979);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 45px;
+  left: 0px;
+  width: 150px;
+  height: 1000px;
+  background-color: gray;
+  color: yellow;
+  margin: 0px;
+  padding: 10px 5px;
+  white-space:nowrap;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar li, .sidebar ul {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+.sidebar {
+  transition: width 1s;
+ }
+
+.sidebar a:hover {
+  color: rgb(120, 220, 245);
+}
+
+.sidebar:hover {
+  width: 150px; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .sidebar {
+        width: 10px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+ <ul>
+ <li><a href="#">My stroy</a></li>
+ <li><a href="#">My interests</a></li>
+ <li><a href="#">My photos</a></li>
+ <li><a href="#">My favorite songs</a></li>
+ <li><a href="#">My dreams</a></li>
+ </ul>
+</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">mydropdown
+  </button>
+  <div class="dropdown-content" id="mydropdown">
+    <a href="#">IG</a>
+    <a href="#">Facebook</a>
+    <a href="#">Line</a>
+  </div>
+  </div> 
+</div>
+
+<h3></h3>
+<p></p>
+
+
+</body>
+</html>
